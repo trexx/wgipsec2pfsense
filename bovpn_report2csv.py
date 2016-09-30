@@ -76,7 +76,6 @@ with open("BOVPN_Report.txt", "r") as input:
                     remoteid_type = "network"
                     p2lifetime = "3600"
 
-
                     if re.match("      Local$", linesplit[0]) is not None :
                         localid_address = linesplit[1].split("/")[0].strip().lower()
                         localid_netbits = linesplit[1].split("/")[1].strip().lower()
