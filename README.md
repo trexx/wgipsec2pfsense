@@ -4,7 +4,7 @@ We have approximately 360 (and growing) IPsec tunnels and needed a quick way of 
 
 The latest version of WatchGuard System Manager (we used v11.11) is able to generate a report on branch office gateways and tunnels giving us all the information we need to migrate tunnels to pfSense with the exception of the pre-shared key.
 
-```bovpn_report2csv.py``` will parse the plain text report and covert it to CSV. Here you can do some sanity checks, add in the PSKs (perhaps by using a vlookup), etc.
+```bovpn_report2csv.py``` will parse the plain text report and convert it to CSV. Here you can do some sanity checks, add in the PSKs (perhaps by using a vlookup), etc.
 
 ```csv2pfsense.py``` will parse the CSV and create a file which can be used in the pfSense Developer Shell
 
